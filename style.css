@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+margin: 0;
+padding: 0;
+}
+html{
+    scroll-behavior: auto;
+    font-family: 'Poppins', sans-serif;
+
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#home{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(250,163,7,1) 0%, rgba(255,186,8,1) 100%);
+    flex-direction: column;
+}
+.h-top
+{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+.h-top .main-tit h1{
+    color: #6A040F;
+    letter-spacing: 8px;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+.h-top .tit .name h1{
+    color: #370617;
+    font-size: 30px;
+    font-weight: 500;
+}
+.h-top .tit .skill h2{
+    color: #D00000;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+.h-top .tagline p{
+    color: #370617;
+    font-size: 18px;
+}
+.h-top .btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.h-top .btns button{
+    padding: 9px 30px;
+    outline: none;
+    border: none;
+    background-color: #E85D04;
+    color: white;
+    font-size: 15px;
+}
+.h-bottom{
+    height: 50%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.h-bottom .left{
+    height: 100%;
+    width: 50%;
+    backdrop-filter: drop-shadow(10px 10px 10px black);
+}
+.left img{
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left:-50px;
+}
+.h-bottom .right
+{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    text-align: end;
+}
+.right nav{
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.right nav a{
+    opacity: 50%;
+    font-size: 30px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.right nav li{
+    list-style: none;
+}
+.right nav a:hover{
+    color: black;
+}
+#about{
+    height: 200%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(3,7,30,1) 0%, rgba(55,6,23,1) 100%);
+    flex-direction: column;
+}
+#edu{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#edu .edu-top{
+    width: 100%;
+    height: 15%;
+}
+.edu-top .main-tit{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.edu-top .main-tit h1{
+    font-size: 80px;
+    color: white;
+    opacity: 25% ;
+    font-weight: 200;
+}
+.edu-top .main-tit h2{
+    position: absolute;
+    font-size: 30px;
+    top: 47px;
+    z-index: 1;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+#edu .edu-bottom{
+    width: 100%;
+    height: 85%;
+    overflow: auto;
+}
+#ach{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ach-top{
+    width: 100%;
+    height: 15%;
+}
+.ach-top .main-tit{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.ach-top .main-tit h1{
+    font-size: 80px;
+    color: white;
+    opacity: 25% ;
+    font-weight: 200;
+}
+.ach-top .main-tit h2{
+    position: absolute;
+    font-size: 30px;
+    top: 47px;
+    z-index: 1;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.ach-bottom{
+    width: 100%;
+    height: 85%;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 20px;
+    overflow: auto;
+}
+.card{
+    background: linear-gradient(0deg, rgba(3,7,30,1) 0%, rgba(55,6,23,1) 100%);
+    width: 80%;
+    height: 15%;
+    display: flex;
+    margin-bottom: 20px;
+}
+.card .left{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    margin-right: 10px;
+}
+.left h1{
+    font-size: 30px;
+    color: white;
+    opacity: 50% ;
+    margin-left: 10px;
+}
+.left p{
+    font-size: 12px;
+    color: #FFBA08;
+    margin-left: 10px;
+    font-weight: light;
+    margin-right: 10px;
+}
+.card .right{
+    height: 100%;
+    width: 10%;
+    background-color: #FFBA08;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #07071D;
+}
+
+#skill{
+    height: 200%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    flex-direction: column;
+}
+#project{
+    width: 100%;
+    height: 50%;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#skills{
+    width: 100%;
+    height: 50%;
+    background-color: orchid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
